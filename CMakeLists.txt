@@ -31,10 +31,10 @@ set(CSP_BUFFER_COUNT 15 CACHE STRING "Number of total packet buffers")
 set(CSP_RDP_MAX_WINDOW 5 CACHE STRING "Max window size for RDP")
 set(CSP_RTABLE_SIZE 10 CACHE STRING "Number of elements in routing table")
 
-option(CSP_USE_RDP "Reliable Datagram Protocol" ON)
+option(CSP_USE_RDP "Reliable Datagram Protocol" OFF)
 option(CSP_USE_HMAC "Hash-based message authentication code" ON)
 option(CSP_USE_PROMISC "Promiscious mode" ON)
-option(CSP_USE_RTABLE "Use routing table" OFF)
+option(CSP_USE_RTABLE "Use routing table" ON) 
 option(CSP_BUFFER_ZERO_CLEAR "Zero out the packet buffer upon allocation" ON)
 
 option(CSP_ENABLE_PYTHON3_BINDINGS "Build Python3 binding" OFF)

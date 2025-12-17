@@ -7,4 +7,8 @@ target_sources(csp PRIVATE
   csp_hooks.c
 )
 
-target_link_libraries(csp PRIVATE freertos_kernel)
+target_include_directories(csp PUBLIC 
+  ../../../../freertos/Inc
+  ../../../../application/Inc
+  ./include
+)
